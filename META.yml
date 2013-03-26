@@ -16,8 +16,9 @@ name: Dist-Zilla-Plugin-ReversionOnRelease
 requires:
   Dist::Zilla: 4.2
   Perl::Version: 1.011
+  perl: 5.008005
 resources:
   bugtracker: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease/issues
   homepage: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease
   repository: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease.git
-version: 0.01
+version: 0.02
