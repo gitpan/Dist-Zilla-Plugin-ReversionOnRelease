@@ -1,0 +1,15 @@
+Build.PL
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+README
+cpanfile
+dist.ini
+lib/Dist/Zilla/Plugin/ReversionOnRelease.pm
+t/00-compile.t
+t/basic.t
+t/dist/0.01/lib/DZT/Sample.pm
+t/dist/v1.0.0/lib/DZT/Sample.pm
+t/release-pod-syntax.t

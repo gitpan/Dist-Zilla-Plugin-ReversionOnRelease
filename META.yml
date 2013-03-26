@@ -1,0 +1,23 @@
+---
+abstract: 'Bump and reversion $VERSION on release'
+author:
+  - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
+build_requires:
+  Test::More: 0.88
+configure_requires:
+  Module::Build::Tiny: 0.013
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300031, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-Plugin-ReversionOnRelease
+requires:
+  Dist::Zilla: 4.2
+  Perl::Version: 1.011
+resources:
+  bugtracker: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease/issues
+  homepage: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease
+  repository: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease.git
+version: 0.01
