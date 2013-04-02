@@ -17,6 +17,10 @@ DESCRIPTION
     out of your main module, and then the released file is written back
     after the release with Dist::Zilla::Plugin::CopyFilesFromRelease.
 
+    Unlike "perl-reversion", this module uses Version::Next to get more
+    naturally incremented version, instead of a little strict 3-digit rules
+    in Perl::Version.
+
     You should not this plugin with any code munging or Pod::Weaver plugins.
 
     By default, this plugin bumps version by the smallest possible increase
@@ -24,7 +28,7 @@ DESCRIPTION
     either running the plugin with "prompt" option to give the desired value
     from the prompt, or by setting the environment variable "V":
 
-      > V=1.0.0 dzil release
+      > V=1.001000 dzil release
 
 AUTHOR
     Tatsuhiko Miyagawa <miyagawa@bulknews.net>
@@ -37,6 +41,5 @@ LICENSE
     under the same terms as Perl itself.
 
 SEE ALSO
-    Dist::Milla Perl::Version perl-reversion
-    Dist::Zilla::Plugin::BumpVersion
+    Dist::Milla Version::Next Dist::Zilla::Plugin::BumpVersion
 
