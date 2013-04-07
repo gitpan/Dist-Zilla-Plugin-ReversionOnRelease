@@ -5,9 +5,9 @@ author:
 build_requires:
   Test::More: 0.88
 configure_requires:
-  Module::Build::Tiny: 0.013
+  Module::Build::Tiny: 0.014
 dynamic_config: 0
-generated_by: 'Dist::Milla version v0.9.4, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Dist::Milla version v1.0.0, Dist::Zilla version 4.300033, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,4 +29,4 @@ resources:
   bugtracker: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease/issues
   homepage: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease
   repository: https://github.com/miyagawa/Dist-Zilla-Plugin-ReversionOnRelease.git
-version: 0.03
+version: 0.04

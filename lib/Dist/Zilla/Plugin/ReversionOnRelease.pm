@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::ReversionOnRelease;
 
 use strict;
 use 5.008_005;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use version;
 use Version::Next;
@@ -16,13 +16,17 @@ with(
 
 has 'prompt' => (is => 'ro', isa => 'Bool', default => 0);
 
+
+qr/ ( (?i: Revision: \s+ ) | v | )
+    ( \d+ (?: [.] \d+)* )
+    ( (?: _ \d+ )? ) /x;
 # from perl-reversion
 my $VersionRegexp =
   qr{ ^ ( .*?  [\$\*] (?: \w+ (?: :: | ' ) )* VERSION \s* = \D*? )
-           (?^x: ( (?i: Revision: \s+ ) | v | )
-                 ( \d+ (?: [.] \d+)* )
-                 ( (?: _ \d+ )? ) )
-                ( .* ) $ }x;
+            ( (?i: Revision: \s+ ) | v | )
+            ( \d+ (?: [.] \d+)* )
+            ( (?: _ \d+ )? )
+            ( .* ) $ }x;
 
 sub munge_files {
     my $self = shift;

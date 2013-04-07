@@ -8,7 +8,6 @@ README
 cpanfile
 dist.ini
 lib/Dist/Zilla/Plugin/ReversionOnRelease.pm
-t/00-compile.t
 t/basic.t
 t/dist/0.01/lib/DZT/Sample.pm
 t/dist/1.0019/lib/DZT/Sample.pm
