@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::ReversionOnRelease;
 
 use strict;
 use 5.008_005;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use version;
 use Version::Next;
@@ -156,7 +156,7 @@ Dist::Zilla::Plugin::ReversionOnRelease - Bump and reversion $VERSION on release
   [ReversionOnRelease]
   prompt = 1
   [CopyFilesFromRelease]
-  match = \a.pm$
+  match = \.pm$
 
 =head1 DESCRIPTION
 

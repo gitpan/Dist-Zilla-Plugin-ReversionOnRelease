@@ -7,7 +7,7 @@ SYNOPSIS
       [ReversionOnRelease]
       prompt = 1
       [CopyFilesFromRelease]
-      match = \a.pm$
+      match = \.pm$
 
 DESCRIPTION
     This is a Dist::Zilla plugin that bumps version (a la "perl-reversion
